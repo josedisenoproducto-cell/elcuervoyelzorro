@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El bosque — escena inmersiva frondosa — voz infantil — cuervo animado</title>
+<base href="/elcuervoyelzorro/">
 <style>
   html,body{margin:0;padding:0;overflow:hidden;height:100%;background:#F7F2E7;font-family:'Georgia',serif;}
   #canvas-wrap{position:relative;width:100vw;height:100vh;}
@@ -104,45 +105,45 @@
 
 <script>
 const ASSETS = {
-  grass: '../imagenes/grass.png',
-  n_arbol: '../imagenes/n_arbol.png',
-  n_fondo: '../imagenes/n_fondo.png',
-  n_camino: '../imagenes/n_camino.png',
-  n_piedra: '../imagenes/n_piedra.png',
-  b_oak_cluster: '../imagenes/b_oak_cluster.png',
-  b_tall_cluster: '../imagenes/b_tall_cluster.png',
-  b_bush_cluster: '../imagenes/b_bush_cluster.png',
-  b_pine_cluster: '../imagenes/b_pine_cluster.png',
+  grass: 'imagenes/grass.png',
+  n_arbol: 'imagenes/n_arbol.png',
+  n_fondo: 'imagenes/n_fondo.png',
+  n_camino: 'imagenes/n_camino.png',
+  n_piedra: 'imagenes/n_piedra.png',
+  b_oak_cluster: 'imagenes/b_oak_cluster.png',
+  b_tall_cluster: 'imagenes/b_tall_cluster.png',
+  b_bush_cluster: 'imagenes/b_bush_cluster.png',
+  b_pine_cluster: 'imagenes/b_pine_cluster.png',
 
   // Cuervo de la fábula — ilustración suministrada por el usuario.
-  cuervo: '../imagenes/cuervo.png',
-  cuervo_anim_1: '../imagenes/cuervo_anim_1.png',
-  cuervo_anim_4: '../imagenes/cuervo_anim_4.png',
+  cuervo: 'imagenes/cuervo.png',
+  cuervo_anim_1: 'imagenes/cuervo_anim_1.png',
+  cuervo_anim_4: 'imagenes/cuervo_anim_4.png',
 
   // Zorro de la fábula — ilustración suministrada por el usuario.
-  zorro_walk_0: '../imagenes/zorro_walk_0.png',
-  zorro_walk_1: '../imagenes/zorro_walk_1.png',
-  zorro_walk_2: '../imagenes/zorro_walk_2.png',
-  zorro_walk_3: '../imagenes/zorro_walk_3.png',
-  zorro_walk_4: '../imagenes/zorro_walk_4.png',
-  cuervo_anim_2_clean: '../imagenes/cuervo_anim_2_clean.png',
-  cuervo_anim_3_clean: '../imagenes/cuervo_anim_3_clean.png',
-  queso_caida: '../imagenes/queso_caida.png',
+  zorro_walk_0: 'imagenes/zorro_walk_0.png',
+  zorro_walk_1: 'imagenes/zorro_walk_1.png',
+  zorro_walk_2: 'imagenes/zorro_walk_2.png',
+  zorro_walk_3: 'imagenes/zorro_walk_3.png',
+  zorro_walk_4: 'imagenes/zorro_walk_4.png',
+  cuervo_anim_2_clean: 'imagenes/cuervo_anim_2_clean.png',
+  cuervo_anim_3_clean: 'imagenes/cuervo_anim_3_clean.png',
+  queso_caida: 'imagenes/queso_caida.png',
   
 
   // Secuencia de interacción zorro-cuervo.
   // Los nombres principales conservan los originales sin espacios. getTexture()
   // prueba también las variantes con espacio por compatibilidad, evitando que
   // una diferencia de nombre deje el sprite del zorro en blanco.
-  zorro_cuervo_1: '../imagenes/zorro-cuervo1.png',
-  zorro_cuervo_2: '../imagenes/zorro-cuervo2.png',
-  zorro_cuervo_3: '../imagenes/zorro-cuervo3.png',
+  zorro_cuervo_1: 'imagenes/zorro-cuervo1.png',
+  zorro_cuervo_2: 'imagenes/zorro-cuervo2.png',
+  zorro_cuervo_3: 'imagenes/zorro-cuervo3.png',
 };
 
 const ASSET_FALLBACKS = {
-  zorro_cuervo_1: ['../imagenes/zorro-cuervo 1.png'],
-  zorro_cuervo_2: ['../imagenes/zorro-cuervo 2.png'],
-  zorro_cuervo_3: ['../imagenes/zorro-cuervo 3.png'],
+  zorro_cuervo_1: ['imagenes/zorro-cuervo 1.png'],
+  zorro_cuervo_2: ['imagenes/zorro-cuervo 2.png'],
+  zorro_cuervo_3: ['imagenes/zorro-cuervo 3.png'],
 };
 
 </script>
